@@ -1,7 +1,8 @@
 import pandas as pd
 
-# f3b434d15747984415c37dbe236007fa
-# 33607ee02342c55a0c3221861d639b19
+# Min-max normalize the audio features "loudness" and "tempo"
+# Checks which songs do not have complete audio features, these will be removed in step 8
+# (Songs like f3b434d15747984415c37dbe236007fa and 33607ee02342c55a0c3221861d639b19)
 AUDIO_FEATURES = ["acousticness", "danceability", "energy", "instrumentalness", "key", "liveness", "loudness",
                   "speechiness", "tempo", "valence"]
 items = pd.read_csv('output\\nprs\\nprs_audio_features.csv', header=0)

@@ -1,6 +1,8 @@
 import pandas as pd
 import csv
 
+# Creates multiple summarizing files that serve as pre-processing data
+# These will be used by the Re-RankSystem and will save significant processing time
 AUDIO_FEATURES = ["acousticness", "danceability", "energy", "instrumentalness", "key", "liveness", "loudness",
                   "speechiness", "tempo", "valence"]
 pos_rating_weights = [1, 1, 1]

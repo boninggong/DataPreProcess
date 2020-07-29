@@ -1,7 +1,7 @@
 import time
 import pandas as pd
-pd.set_option('display.max_columns', None)
 
+# Extracts all audio features of songs that are left in the dataset after all the filters
 cols = ['track_id', "acousticness", "danceability", "energy", "instrumentalness",
         "key", "liveness", "loudness", "speechiness", "tempo", "valence"]
 

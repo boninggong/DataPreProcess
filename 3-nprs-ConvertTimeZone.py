@@ -1,9 +1,8 @@
 import pandas as pd
-import time
 from datetime import datetime
 from datetime import timedelta
 
-start_time = time.time()
+# Converts time of tweets to the users' local time zones and groups them together
 df = pd.read_csv('output\\nprs\\user_track.csv', header=0)
 res_dict = {'UserID': [], 'ItemID': [], 'Rating': 1, 'Dimension': 'DayTime', 'Condition': []}
 

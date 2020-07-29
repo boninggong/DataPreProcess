@@ -1,6 +1,7 @@
 import pandas as pd
 pd.set_option('display.max_columns', None)
 
+# Formatting of data
 ratings = pd.read_csv('output\\nprs\\nowplaying-rs-final.csv', header=0)
 
 ratings.drop('Dimension', axis=1, inplace=True)
