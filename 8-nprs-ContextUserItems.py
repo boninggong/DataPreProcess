@@ -10,7 +10,7 @@ songs_ignore = [38, 5837]  # Use the id of corrupt audio feature songs gathered 
 
 
 # Creates a new data file where ratings are ordered per contextual condition per user
-def create_context_file(v):
+def create_context_file():
     ratings = pd.read_csv('output\\nprs\\nowplaying-rs-final.csv', delimiter=',')
     all_context_conditions = {}
     user_context_ratings = {}
