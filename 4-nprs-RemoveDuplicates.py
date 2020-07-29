@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Maps original user and song IDs to our custom IDs to simplify identification
-df = pd.read_csv('output\\nprs\\nowplaying-rsv.csv', header=0)
+df = pd.read_csv('output\\nprs\\nowplaying-rs.csv', header=0)
 df = df.drop_duplicates(subset=['UserID', 'ItemID', 'Condition'], keep='first')
 
 i = 1

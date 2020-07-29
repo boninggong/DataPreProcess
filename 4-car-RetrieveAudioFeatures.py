@@ -3,6 +3,7 @@ import spotipy
 import spotipy.util as util
 import pprint
 
+# Import your own Spotify ID and secret here to extract audio features for the songs in the InCarMusic dataset
 CLIENT_ID = ""
 CLIENT_SECRET = ""
 USER = ""
