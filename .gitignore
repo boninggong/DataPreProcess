@@ -2,5 +2,4 @@ venv/
 .idea/
 __pycache__/
 test.py
-data/*
 output/*
